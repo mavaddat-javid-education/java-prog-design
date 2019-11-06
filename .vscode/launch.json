@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BankProgram",
+            "request": "launch",
+            "mainClass": "javaprogramdesign.chapter01.bank04.BankProgram",
+            "projectName": "java-prog-design_afb1fbf1"
+        }
+    ]
+}

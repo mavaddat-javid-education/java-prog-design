@@ -8,6 +8,15 @@ public class BankClient {
    private boolean done = false;
    private Bank bank;
 
+   public BankClient(){
+      this(new Bank()); //this allows the simplest version of the bank client constructer
+   }
+
+   public BankClient(Bank bank){
+      this.scanner = new Scanner(System.in); //allows for backward compatibility as well as a simpler constructer
+      this.bank = bank;
+   }
+
    public BankClient(Scanner scanner, Bank bank) {
       this.scanner = scanner;
       this.bank = bank;
