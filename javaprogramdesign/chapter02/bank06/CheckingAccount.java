@@ -51,6 +51,14 @@ public class CheckingAccount implements BankAccount, Comparable<BankAccount> {
          return bal1 - bal2;
    }
 
+   
+   /**If the two balances are equal then the method uses their
+      account numbers to arbitrarily break the tie. Thus the method will return
+      0 only if the comparison is between objects corresponding to the same
+      account. This is the expected behavior of any compareTo method.
+    * @param obj
+    * @return boolean
+    */
    public boolean equals(Object obj) {
       if (! (obj instanceof CheckingAccount))
          return false;
