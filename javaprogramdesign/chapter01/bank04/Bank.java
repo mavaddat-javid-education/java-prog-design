@@ -6,6 +6,10 @@ public class Bank {
    private HashMap<Integer,BankAccount> accounts;
    private int nextacct;
 
+   public Bank(){
+      this(new HashMap<Integer,BankAccount>(),(int)0);
+   }
+
    public Bank(HashMap<Integer,BankAccount> accounts, int n) {
       this.accounts = accounts;
       nextacct = n;
